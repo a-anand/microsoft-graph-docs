@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for messages in Teams channels and chats using Microsoft Graph
+# Get change notifications for teams using Microsoft Graph
 
 Change notifications enable you to subscribe to changes (create, update, and delete) to a [channel](/graph/api/resources/channel?preserve-view=true). Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
