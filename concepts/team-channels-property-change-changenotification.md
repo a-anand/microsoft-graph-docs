@@ -1,6 +1,6 @@
 ---
-title: "Get change notifications for change in creation updatation or deletion of teams or channels using Microsoft Graph"
-description: "Get change notifications for change in creation updatation or deletion of teams or channels using Microsoft Graph"
+title: "Get change notifications for creation updation or deletion of teams using Microsoft Graph"
+description: "Get change notifications for creation updatation or deletion of teams using Microsoft Graph"
 author: "AbhishekAnand"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
