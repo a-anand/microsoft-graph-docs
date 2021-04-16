@@ -17,7 +17,7 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 ### Subscribe to changes in membership of any team across tenant
 
-To get change notifications for membership change in any team in tenant, subscribe to `teams/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership change in any team in tenant, subscribe to `teams/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. One notification will be sent corresponding to one change, e.g. if someone adds five members once then five different notificaiton will be sent. 
 
 #### Permissions
 
