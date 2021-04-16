@@ -17,7 +17,7 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 ### Subscribe to changes in any channel at tenant level
 
-To get change notifications for any change in channel's property across any channel in tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for any change in channel's property in any channel or any channel creation or deletion across tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ## Notification payloads
 
-Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.
+Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the channel payload along with the notification, removing the need to call back and get the content.
 
 ### Notifications with resource data
 
@@ -91,7 +91,7 @@ For notifications with resource data, the payload looks like the following. This
         "changeType": "created",
         "clientState": "<<--SpecifiedClientState-->>",
         "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
-        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
+        "resource": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')/channels('19:01f39f5ac52f45fb9a7ce01cedd57b1f@thread.tacv2')",
         "resourceData": {
             "id": "1612289765949",
             "@odata.type": "#Microsoft.Graph.chatMessage",
