@@ -17,7 +17,7 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 ### Subscribe to changes in any team at tenant level
 
-To get change notifications for any change in teams' property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for any change in team's property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -67,7 +67,7 @@ Content-Type: application/json
 {
   "changeType": "deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/team/{id}",
+  "resource": "/teams/{id}",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -92,11 +92,11 @@ For notifications with resource data, the payload looks for any change in team's
         "changeType": "created",
         "clientState": "<<--SpecifiedClientState-->>",
         "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
-        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
+        "resource": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')",
         "resourceData": {
             "id": "1612289765949",
-            "@odata.type": "#Microsoft.Graph.chatMessage",
-            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
+            "@odata.type": "#Microsoft.Graph.Teams",
+            "@odata.id": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')"
         },
         "encryptedContent": {
             "data": "<<--EncryptedContent-->",
@@ -111,7 +111,7 @@ For notifications with resource data, the payload looks for any change in team's
 ```
   
   
-For notifications with resource data, the payload looks for any change in channel property looks like the following.
+For notifications with resource data, the payload looks for any change in team's property looks like the following.
 
 ```json
 {
@@ -120,11 +120,11 @@ For notifications with resource data, the payload looks for any change in channe
         "changeType": "created",
         "clientState": "<<--SpecifiedClientState-->>",
         "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
-        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
+        "resource": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')",
         "resourceData": {
             "id": "1612289765949",
-            "@odata.type": "#Microsoft.Graph.chatMessage",
-            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
+            "@odata.type": "#Microsoft.Graph.Teams",
+            "@odata.id": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')"
         },
         "encryptedContent": {
             "data": "<<--EncryptedContent-->",
