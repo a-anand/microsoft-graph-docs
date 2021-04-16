@@ -115,14 +115,13 @@ The decrypted notification payload looks like the following. The payload conform
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "id": "string (identifier)",
-  "displayName" : "string",
-  "visibleHistoryStartDateTime": "string (timestamp)",
-  "roles" : ["string"],
-  "userId" : "string",
-  "email" : "string",
-  "tenantId": "string"
+  "id": "/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+  "roles": [
+    "owner"
+  ],
+  "displayName": "John Doe",
+  "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+  "email": null
 }
 ```
 
