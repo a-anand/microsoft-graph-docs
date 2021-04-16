@@ -1,5 +1,5 @@
 ---
-title: "Get change notifications for change in creation, updation or deletion of channels using Microsoft Graph"
+title: "Get change notifications for creation, updation or deletion of channels using Microsoft Graph"
 description: "Get change notifications for change in creation, updation or deletion of channels using Microsoft Graph"
 author: "AbhishekAnand"
 localization_priority: Priority
