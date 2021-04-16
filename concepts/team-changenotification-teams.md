@@ -140,45 +140,45 @@ For notifications with resource data, the payload looks for any change in team's
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [teams](/graph/api/resources/teams?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
-  "id": "1612289992105",
-  "replyToId": null,
-  "etag": "1612289992105",
-  "messageType": "message",
-  "createdDateTime": "2021-02-02T18:19:52Z",
-  "lastModifiedDateTime": "2021-02-02T18:19:52.105Z",
-  "lastEditedDateTime": null,
-  "deletedDateTime": null,
-  "subject": null,
-  "summary": null,
-  "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces",
-  "importance": "normal",
-  "locale": "en-us",
-  "webUrl": null,
-  "from": {
-    "application": null,
-    "device": null,
-    "user": {
-      "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-      "displayName": "Ramjot Singh",
-      "userIdentityType": "aadUser"
-    },
-    "conversation": null
-  },
-  "body": {
-    "contentType": "text",
-    "content": "test"
-  },
-  "channelIdentity": null,
-  "attachments": [],
-  "mentions": [],
-  "policyViolation": null,
-  "reactions": [],
-  "replies": [],
-  "hostedContents": []
+"id": "4c533ad3-e1dd-4277-a672-92ab64ed225c",
+"createdDateTime": "2021-03-18T10:31:14.597Z",
+"displayName": "Sample name",
+"description": "Sample description",
+"internalId": "19:2077546f765a42c1ba71236f4df70aa2@thread.tacv2",
+"specialization": "none",
+"visibility": "public",
+"webUrl": "https://teams.microsoft.com/l/team/19:2077546f724a42c1ba71236f4df79aa2%40thread.tacv2/conversations?groupId=4c533ad3-e1dd-4277-a672-92ab64ed225c&tenantId=0f2e8f59-862a-483b-9ca8-82a10665e17d",
+"isArchived": false,
+"isMembershipLimitedToOwners": false,
+"memberSettings": {
+"allowCreateUpdateChannels": true,
+"allowCreatePrivateChannels": true,
+"allowDeleteChannels": true,
+"allowAddRemoveApps": true,
+"allowCreateUpdateRemoveTabs": true,
+"allowCreateUpdateRemoveConnectors": true
+},
+"guestSettings": {
+"allowCreateUpdateChannels": false,
+"allowDeleteChannels": false
+},
+"messagingSettings": {
+"allowUserEditMessages": true,
+"allowUserDeleteMessages": true,
+"allowOwnerDeleteMessages": true,
+"allowTeamMentions": true,
+"allowChannelMentions": true
+},
+"funSettings": {
+"allowGiphy": true,
+"giphyContentRating": "moderate",
+"allowStickersAndMemes": true,
+"allowCustomMemes": true
+}
 }
 ```
 
@@ -195,11 +195,11 @@ The payload looks like the following. This payload is for a message sent in a ch
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2021-02-02T11:26:41.0537895-08:00",
-  "resource": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')",
+  "resource": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')",
   "resourceData": {
     "id": "1612293113399",
-    "@odata.type": "#Microsoft.Graph.chatMessage",
-    "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')"
+    "@odata.type": "#Microsoft.Graph.Teams",
+    "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')"
   }
 }
 ```
