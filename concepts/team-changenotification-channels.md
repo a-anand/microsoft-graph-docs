@@ -146,7 +146,7 @@ The payload looks like the following. This payload is for a message sent in a ch
   "resourceData": {
     "id": "1612293113399",
     "@odata.type": "#Microsoft.Graph.Channel",
-    "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')"
+    "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')"
   }
 }
 ```
