@@ -94,7 +94,7 @@ For notifications with resource data, the payload looks like the following. This
         "resource": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')/channels('19:01f39f5ac52f45fb9a7ce01cedd57b1f@thread.tacv2')",
         "resourceData": {
             "id": "1612289765949",
-            "@odata.type": "#Microsoft.Graph.chatMessage",
+            "@odata.type": "#Microsoft.Graph.Channel",
             "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
         },
         "encryptedContent": {
@@ -117,14 +117,15 @@ The decrypted notification payload looks like the following. The payload conform
 
 ```json
 {
-  "description": "string",
-  "displayName": "string",
-  "id": "string (identifier)",
-  "isFavoriteByDefault": true,
-  "email": "string",
-  "webUrl": "string",
-  "membershipType": "channelMembershipType",
-  "createdDateTime": "string (timestamp)"
+"id": "19:a3f841d969cd4ae0a7cbe847fc10b371@thread.tacv2",
+"createdDateTime": "2020-02-14T01:10:03.592Z",
+"displayName": "General",
+"description": "Sample Channel description",
+"isFavoriteByDefault": true,
+"email": "",
+"webUrl": "https://teams.microsoft.com/l/channel/19%3Aa3f841d969cd4ae0a7cbe847fc10b371%40thread.tacv2/General?groupId=7ed9bdab-9c7d-4c10-a25d-3f4ff0e34577&tenantId=0f2d8f49-862a-493b-9ca8-82a10637e17d",
+"membershipType": "standard",
+"moderationSettings": null
 }
 ```
 
@@ -144,7 +145,7 @@ The payload looks like the following. This payload is for a message sent in a ch
   "resource": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')",
   "resourceData": {
     "id": "1612293113399",
-    "@odata.type": "#Microsoft.Graph.chatMessage",
+    "@odata.type": "#Microsoft.Graph.Channel",
     "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')"
   }
 }
