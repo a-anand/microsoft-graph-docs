@@ -115,6 +115,8 @@ For details about how to validate tokens and decrypt the payload, see [Set up ch
 
 The decrypted notification payload looks like the following. The payload conforms to the [channel](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
+>**Note:** Channel email address is not returned in payload.
+
 ```json
 {
 "id": "19:a3f841d969cd4ae0a7cbe847fc10b371@thread.tacv2",
